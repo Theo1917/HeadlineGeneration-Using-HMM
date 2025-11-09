@@ -7,3 +7,16 @@ Transition probabilities (A): how likely one topic leads to another
 Emission probabilities (B): how likely each word (or sentence type) is emitted from a topic
 Initial probabilities (π): how likely each topic is to start an article
 Then, the headline and summary are derived from the most probable sequence  in both directions.
+
+
+Prepocessing 
+-> Tokenization 
+-> POS Tagging ( optional )
+-> stopword removal
+-> fequency checking 
+
+We try to implement Bi directional HMM
+  where the forward hmm gives the headline from the article  FORWARD (HEADLINE GENERATION)
+  and the backward hmm gives the article from the headline.  BACKWARD(SUMMARIZATION)
+
+  
